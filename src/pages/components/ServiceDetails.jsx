@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceDetailsSideBar from '../services-blocks/ServiceDetailsSideBar'
 import ServiceDetailsMain from '../services-blocks/ServiceDetailsMain'
 import ServiceDetailsHeader from '../title-headers/ServiceDetailsHeader'
+import ContactBlock from '../home-blocks/ContactBlock'
 
 const ServiceDetails = () => {
   return (
@@ -15,7 +16,7 @@ const ServiceDetails = () => {
           </div>
       </div>
     </section>  
-    <Contact/>          
+    <ContactBlock/>      
   </>
   )
 }

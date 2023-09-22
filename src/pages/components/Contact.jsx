@@ -4,6 +4,7 @@ import ContactForm from '../contact-blocks/ContactForm'
 import Socials from '../contact-blocks/Socials'
 import Map from '../contact-blocks/Map'
 import ContactHeader from '../title-headers/ContactHeader'
+import ContactBlock from '../home-blocks/ContactBlock'
 
 const Contact = () => {
   return (
@@ -13,7 +14,7 @@ const Contact = () => {
       <ContactForm/>
       <Map/>
       <Socials/>
-      <Contact/>
+      <ContactBlock/>
     </>
   )
 }

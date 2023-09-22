@@ -6,6 +6,7 @@ import Mission from '../about-blocks/Mission'
 import Team from '../about-blocks/Team'
 import Clients from '../about-blocks/Clients'
 import AboutHeader from '../title-headers/AboutHeader'
+import ContactBlock from '../home-blocks/ContactBlock'
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
       <Mission/>
       <Team/>
       <Clients/>
-      <Contact/>
+      <ContactBlock/>
     </>
   )
 }

@@ -18,7 +18,7 @@ export default function WorkList() {
         itemSelector: ".filter-item",
         layoutMode: "fitRows",
         percentPosition: true,
-        columnWidth: ".col-lg-4",
+        columnWidth: ".col-lg-6",
         fitRows: { gutter: 30 },
       })
     );

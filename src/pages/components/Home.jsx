@@ -6,7 +6,7 @@ import Services from '../home-blocks/Services'
 import Clients from '../home-blocks/Clients'
 import Benefits from '../home-blocks/Benefits'
 import Mission from '../home-blocks/Mission'
-import Contact from '../home-blocks/Contact'
+import ContactBlock from '../home-blocks/ContactBlock'
 
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
         <Benefits/>
         <Works/>
         <Clients/>
-        <Contact/>
+        <ContactBlock/>
     </div>
   )
 }

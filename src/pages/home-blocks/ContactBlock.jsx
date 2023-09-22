@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Contact = () => {
+const ContactBlock = () => {
   return (
     <section className="cta-one">
         <div className="container">
@@ -23,4 +23,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactBlock

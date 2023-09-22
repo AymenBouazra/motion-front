@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import WorkDetailsHeader from "../title-headers/WorkDetailsHeader";
+import ContactBlock from "../home-blocks/ContactBlock";
 
 const WorkDetails = () => {
   return (
@@ -225,7 +226,7 @@ const WorkDetails = () => {
           </div>
         </div>
       </section>
-      <Contact/>
+      <ContactBlock/>
     </>
   );
 };
