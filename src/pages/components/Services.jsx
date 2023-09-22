@@ -7,6 +7,7 @@ const Services = () => {
     <>
       <ServicesHeader/>
       <ListServices/>
+      <Contact/>
     </>
   )
 }

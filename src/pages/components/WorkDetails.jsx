@@ -225,6 +225,7 @@ const WorkDetails = () => {
           </div>
         </div>
       </section>
+      <Contact/>
     </>
   );
 };

@@ -14,7 +14,8 @@ const ServiceDetails = () => {
             <ServiceDetailsMain/>
           </div>
       </div>
-    </section>            
+    </section>  
+    <Contact/>          
   </>
   )
 }

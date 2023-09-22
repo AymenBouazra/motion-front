@@ -17,6 +17,7 @@ const About = () => {
       <Mission/>
       <Team/>
       <Clients/>
+      <Contact/>
     </>
   )
 }

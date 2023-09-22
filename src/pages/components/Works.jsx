@@ -7,6 +7,7 @@ const Portfolio = () => {
     <>
       <WorksHeader/>
       <Work/>
+      <Contact/>
     </>
   );
 };

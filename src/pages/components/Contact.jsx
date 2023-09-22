@@ -13,6 +13,7 @@ const Contact = () => {
       <ContactForm/>
       <Map/>
       <Socials/>
+      <Contact/>
     </>
   )
 }
