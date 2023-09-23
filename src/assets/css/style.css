@@ -7973,8 +7973,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .cases-list .case-one__img {
     width: 100%;
-    height: 50vh;
-    object-fit: cover;
+    height: 500px;
 }
 
 .cases-list .case-one__img img {

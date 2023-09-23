@@ -137,5 +137,62 @@ export const works = [
     "pictures": ["Buffer"],
     "testimonial": "String",
     "otherDetails": "String"
+  },
+  { 
+    "slug": "title",
+    "type": ["Web"],
+    "headerTitle": "String",
+    "breadcrumb": "String",
+    "cover": "./assets/",
+    "title": "String",
+    "description": "String",
+    "clientInfos": {
+      "Client": "String",
+      "Industry": "String",
+      "Services": "String",
+      "Date": "String",
+      "Website": "String"
+    },
+    "pictures": ["Buffer"],
+    "testimonial": "String",
+    "otherDetails": "String"
+  },
+  { 
+    "slug": "title",
+    "type": ["Web"],
+    "headerTitle": "String",
+    "breadcrumb": "String",
+    "cover": "./assets/",
+    "title": "String",
+    "description": "String",
+    "clientInfos": {
+      "Client": "String",
+      "Industry": "String",
+      "Services": "String",
+      "Date": "String",
+      "Website": "String"
+    },
+    "pictures": ["Buffer"],
+    "testimonial": "String",
+    "otherDetails": "String"
+  },
+  { 
+    "slug": "title",
+    "type": ["Advertising"],
+    "headerTitle": "String",
+    "breadcrumb": "String",
+    "cover": "./assets/",
+    "title": "String",
+    "description": "String",
+    "clientInfos": {
+      "Client": "String",
+      "Industry": "String",
+      "Services": "String",
+      "Date": "String",
+      "Website": "String"
+    },
+    "pictures": ["Buffer"],
+    "testimonial": "String",
+    "otherDetails": "String"
   }
 ]
