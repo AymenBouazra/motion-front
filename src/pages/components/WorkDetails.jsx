@@ -4,21 +4,21 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import WorkDetailsHeader from "../title-headers/WorkDetailsHeader";
 import ContactBlock from "../home-blocks/ContactBlock";
-import {works} from "./Cases";
+import { works } from "./Cases";
 
 const WorkDetails = () => {
-  const [work , setWork] = useState({})
+  const [work, setWork] = useState({})
   const params = useParams()
-  const fetchWork = ()=> {
-    const response = works.find((x)=>x.slug === params.slug)
-    setWork(response)
-  }
-  useEffect(()=>{
+  useEffect(() => {
+    const fetchWork = () => {
+      const response = works.find((x) => x.slug === params.slug)
+      setWork(response)
+    }
     fetchWork()
-  }, [])
+  }, [params.slug])
   return (
     <>
-      <WorkDetailsHeader cover={work.cover} breadcrumb={work.breadcrumb} headertitle={work.headerTitle}/>
+      <WorkDetailsHeader cover={work.cover} breadcrumb={work.breadcrumb} headertitle={work.headerTitle} />
 
       <section className="case-details">
         <div className="container">
@@ -41,7 +41,7 @@ const WorkDetails = () => {
                     <div className="d-flex justify-content-between">
                       <div className="d-flex">
                         <div className="case-details__details-icon">
-                          <FontAwesomeIcon icon={faUserCircle} size="lg"/>
+                          <FontAwesomeIcon icon={faUserCircle} size="lg" />
                         </div>
                         <div className="case-details__details-sub-title">
                           Client
@@ -52,68 +52,68 @@ const WorkDetails = () => {
                   </div>
                 </div>
 
-                  <div className="col-xl-6 mb-3">
+                <div className="col-xl-6 mb-3">
                   <div className="case-details__details-box">
                     <div className="d-flex justify-content-between">
                       <div className="d-flex">
                         <div className="case-details__details-icon">
-                          <FontAwesomeIcon icon={faUserCircle} size="lg"/>
+                          <FontAwesomeIcon icon={faUserCircle} size="lg" />
                         </div>
                         <div className="case-details__details-sub-title">
-                        Industry
+                          Industry
                         </div>
                       </div>
                       <p className="case-details__details-title">{work.clientInfos?.Industry}</p>
                     </div>
                   </div>
-                  </div>
+                </div>
 
-                  <div className="col-xl-6 mb-3">
+                <div className="col-xl-6 mb-3">
                   <div className="case-details__details-box">
                     <div className="d-flex justify-content-between">
                       <div className="d-flex">
                         <div className="case-details__details-icon">
-                          <FontAwesomeIcon icon={faUserCircle} size="lg"/>
+                          <FontAwesomeIcon icon={faUserCircle} size="lg" />
                         </div>
                         <div className="case-details__details-sub-title">
-                        Services
+                          Services
                         </div>
                       </div>
                       <p className="case-details__details-title">{work.clientInfos?.Services}</p>
                     </div>
                   </div>
-                  </div>
+                </div>
 
-                  <div className="col-xl-6 mb-3">
+                <div className="col-xl-6 mb-3">
                   <div className="case-details__details-box">
                     <div className="d-flex justify-content-between">
                       <div className="d-flex">
                         <div className="case-details__details-icon">
-                          <FontAwesomeIcon icon={faUserCircle} size="lg"/>
+                          <FontAwesomeIcon icon={faUserCircle} size="lg" />
                         </div>
                         <div className="case-details__details-sub-title">
-                        Date
+                          Date
                         </div>
                       </div>
                       <p className="case-details__details-title">{work.clientInfos?.Date}</p>
                     </div>
                   </div>
-                  </div>
+                </div>
 
-                  <div className="col-xl-6 mb-3">
-                    <div className="case-details__details-box">
-                      <div className="d-flex justify-content-between">
-                        <div className="d-flex">
-                          <div className="case-details__details-icon">
-                            <FontAwesomeIcon icon={faUserCircle} size="lg"/>
-                          </div>
-                          <div className="case-details__details-sub-title">
-                          Website
-                          </div>
+                <div className="col-xl-6 mb-3">
+                  <div className="case-details__details-box">
+                    <div className="d-flex justify-content-between">
+                      <div className="d-flex">
+                        <div className="case-details__details-icon">
+                          <FontAwesomeIcon icon={faUserCircle} size="lg" />
                         </div>
-                        <p className="case-details__details-title">{work.clientInfos?.Website}</p>
+                        <div className="case-details__details-sub-title">
+                          Website
+                        </div>
                       </div>
+                      <p className="case-details__details-title">{work.clientInfos?.Website}</p>
                     </div>
+                  </div>
                 </div>
 
               </div>
@@ -125,7 +125,7 @@ const WorkDetails = () => {
       <section className="case-picture-block">
         <div className="container-fluid p-0">
           <div className="row">
-            <img src={work.pictures && work?.pictures[0]} alt=""/>
+            <img src={work.pictures && work?.pictures[0]} alt="" />
           </div>
         </div>
       </section>
@@ -134,10 +134,10 @@ const WorkDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <img src={work.pictures && work?.pictures[1]} alt=""/>
+              <img src={work.pictures && work?.pictures[1]} alt="" />
             </div>
             <div className="col-lg-6">
-            <img src={work.pictures && work?.pictures[2]} alt=""/>
+              <img src={work.pictures && work?.pictures[2]} alt="" />
             </div>
           </div>
         </div>
@@ -162,12 +162,12 @@ const WorkDetails = () => {
                 Concept
               </h4>
               <p>
-                  Koordinaten bilden die Grundlage für Einsatz des Produktes
-                  ausgerichtete Corporate Design. Reale Daten wie zum Beispiel
-                  Wetterdaten, Geografische Flächen und Höhenmeter, werden in das
-                  Design in mit einbezogen. Die neu gestaltete Marke zeichnet sich
-                  sowohl durch userorientierte Einsatz.
-                </p>
+                Koordinaten bilden die Grundlage für Einsatz des Produktes
+                ausgerichtete Corporate Design. Reale Daten wie zum Beispiel
+                Wetterdaten, Geografische Flächen und Höhenmeter, werden in das
+                Design in mit einbezogen. Die neu gestaltete Marke zeichnet sich
+                sowohl durch userorientierte Einsatz.
+              </p>
             </div>
           </div>
         </div>
@@ -176,7 +176,7 @@ const WorkDetails = () => {
       <section className="case-picture-block">
         <div className="container-fluid p-0">
           <div className="row">
-          <img src={work.pictures && work?.pictures[3]} alt=""/>
+            <img src={work.pictures && work?.pictures[3]} alt="" />
           </div>
         </div>
       </section>
@@ -185,10 +185,10 @@ const WorkDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-            <img src={work.pictures && work?.pictures[4]} alt=""/>
+              <img src={work.pictures && work?.pictures[4]} alt="" />
             </div>
             <div className="col-lg-6">
-            <img src={work.pictures && work?.pictures[5]} alt=""/>
+              <img src={work.pictures && work?.pictures[5]} alt="" />
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ const WorkDetails = () => {
           </div>
         </div>
       </section>
-      <ContactBlock/>
+      <ContactBlock />
     </>
   );
 };
