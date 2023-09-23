@@ -83,6 +83,12 @@ body.locked {
     overflow: hidden;
 }
 
+main {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 600px;
+  }
+
 a {
     color: var(--motion-gray);
 }
@@ -2939,6 +2945,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     display: block;
     padding: 0 0 120px;
+    background-color: var(--motion-white);
 }
 
 .free-consultation__inner {
@@ -3871,7 +3878,7 @@ input[type="search"]::-webkit-search-results-decoration {
     justify-content: space-between;
     background-color: var(--motion-base);
     overflow: hidden;
-    padding: 94px 0;
+    padding: 90px 0;
     padding-left: 120px;
     border-radius: var(--motion-bdr-radius);
 }
@@ -3938,6 +3945,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 690px;  
     left: 0;
     right: 0;
     z-index: 0;
@@ -4724,6 +4732,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     display: block;
     padding: 120px 0 90px;
+    background-color: var(--motion-white);
 }
 
 .services-one__single {
@@ -4977,6 +4986,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     display: block;
     padding: 118px 0 119px;
+    background-color: var(--motion-white);
 }
 
 .brand-one .swiper-slide {
@@ -6619,7 +6629,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .contact-form {
     padding: 120px 0;
+    background-color: var(--motion-white);
 }
+
 .contact-infos {
     position: relative;
     padding: 120px 0;
@@ -6685,6 +6697,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .contact-socials {
     padding: 100px 0;
+    background-color: var(--motion-white);
 }
 
 .title-container .primary-title {
@@ -7874,6 +7887,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     display: block;
     padding: 120px 0 90px;
+    background-color: var(--motion-white);
 }
 
 .cases-page--carousel {
@@ -8293,6 +8307,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     display: block;
     padding: 120px 0 120px;
+    background-color: var(--motion-white);
 }
 
 .service-details__sidebar {
@@ -8658,6 +8673,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     display: block;
     padding: 120px 0 120px;
+    background-color: var(--motion-white);
 }
 
 .work-together-two__left {

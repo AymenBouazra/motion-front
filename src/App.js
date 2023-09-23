@@ -81,6 +81,7 @@ function App() {
     ]}/>
     <div className="page-wrapper">
       <Router>
+        <main>
         <Header showSecondNav={showSecondNav} />
         <Suspense fallback={Loader}>
           <Routes>
@@ -94,8 +95,9 @@ function App() {
             <Route path="*" element={<Page404 />} />
           </Routes>
         </Suspense>
+        </main>
         <Footer />
-        <Gototop/>
+        <Gototop />
       </Router>
     </div>
     </>

@@ -5,7 +5,7 @@ import { default as FooterLogo } from '../assets/img/logo-white-t.svg';
 const Footer = () => {
   return (
     <>
-    <footer className="site-footer ">
+    <footer className="site-footer footer-sticky">
     <div className="site-footer__top">
         <div className="site-footer-shape-1"
             style={{backgroundImage: 'url(assets/img/shapes/site-footer-shape-1.png)'}}></div>
