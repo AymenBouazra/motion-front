@@ -1,9 +1,24 @@
 import React, { useState } from "react";
 import Work from "./Work";
 import {motion} from "framer-motion"
+import {works} from "./Cases"
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export default function WorkList() {
   const [filtered , setFiltered] = useState([])
+  const params = useParams()
+  const fetchFilter = ()=> {
+
+  }
+  useEffect(()=>{
+    if(activeGenre === 0) {
+      setFiltered(Branding);
+      return;
+    }
+
+    const filtered = Branding.filter
+  }, [])
 
   return (
     <section className="cases-page">
@@ -26,9 +41,9 @@ export default function WorkList() {
       
           <motion.div layout className="cases-list">
               {
-                [0,0,0,0,0,0,0].map((el, key)=>
+                works.map((el, key)=>
                   {
-                    return <Work key={key}/>
+                    return <Work work={el} key={key}/>
                   }
                 )
               }

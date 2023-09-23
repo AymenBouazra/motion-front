@@ -90,7 +90,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/service-details" element={<ServiceDetails />} />
             <Route path="/works" element={<Works />} />
-            <Route path="/works-details" element={<WorkDetails />} />
+            <Route path="/works/:slug" element={<WorkDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Page404 />} />
           </Routes>

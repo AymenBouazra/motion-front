@@ -86,7 +86,7 @@ body.locked {
 main {
     position: relative;
     z-index: 2;
-    margin-bottom: 600px;
+    margin-bottom: 540px;
   }
 
 a {
@@ -7994,7 +7994,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .cases-list .case-one__arrow {
     position: absolute;
     bottom: 30px;
-    right: 50px;
+    right: 30px;
     z-index: 4;
 }
 
@@ -8005,6 +8005,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     display: block;
     padding: 120px 0 0;
+    background-color: var(--motion-white);
 }
 
 .case-details__img {
@@ -8253,7 +8254,19 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .case-picture-block {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
+    background-color: var(--motion-white);
+}
+
+.cases-pagination {
+    background-color: var(--motion-white);
+}
+
+.work-more-details {
+    background-color: var(--motion-white);
+    z-index: 0;
+    display: block;
+    position: relative;
 }
 
 .case-picture-block img {
@@ -8278,7 +8291,7 @@ input[type="search"]::-webkit-search-results-decoration {
     display: block;
     position: absolute;
     background: var(--motion-base);
-    height: 10%;
+    height: 100%;
     width: 40%;
     left: 0px;
     z-index: -1;

@@ -1,11 +1,11 @@
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 
-const WorkDetailsHeader = () => (
+const WorkDetailsHeader = ({cover, breadcrumb, headertitle}) => (
   <section className="page-header">
     <Parallax
       className="page-header-bg"
-      bgImage={"assets/img/headers/works-header-bg.jpg"}
+      bgImage={cover}
       strength={500}
     >
       <div className="page-header-overlay"></div>
@@ -27,9 +27,9 @@ const WorkDetailsHeader = () => (
               <li>
                 <span>/</span>
               </li>
-              <li>Work Details</li>
+              <li>{breadcrumb}</li>
             </ul>
-            <h2>Work Details</h2>
+            <h2>{headertitle}</h2>
           </div>
         </div>
       </div>
