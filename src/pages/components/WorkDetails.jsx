@@ -16,6 +16,10 @@ const WorkDetails = () => {
     }
     fetchWork()
   }, [params.slug])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <WorkDetailsHeader cover={work.cover} breadcrumb={work.breadcrumb} headertitle={work.headerTitle} />

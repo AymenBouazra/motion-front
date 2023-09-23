@@ -1,7 +1,7 @@
 export const works = [
   { 
     "slug": "Khayaziz-Group",
-    "type": ["Branding, ","Web"],
+    "type": ["Branding","Web"],
     "headerTitle": "Khayaziz Group",
     "breadcrumb": "Khayaziz Group",
     "cover": "/assets/img/works/work-1/case-cover.png",

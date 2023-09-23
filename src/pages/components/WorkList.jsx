@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { works } from "./Cases"
 import Work from "./Work";
 
@@ -35,7 +35,7 @@ export default function WorkList() {
         <div className="row">
 
           <div className="works-filters d-flex justify-content-center mb-5">
-            <input type="radio" onClick={() => setType('All')} name="category" id="all" value="all" className="d-none" />
+            <input type="radio" onClick={() => setType('All')} name="category" id="all" value="all" className="d-none" checked={type==="All"}/>
             <label className="me-4 underlined-btn" htmlFor="all">All</label>
 
             <input type="radio" onClick={() => setType('Branding')} name="category" id="branding" value="branding" className="d-none" />
@@ -47,8 +47,8 @@ export default function WorkList() {
             <input type="radio" onClick={() => setType('Advertising')} name="category" id="advertising" value="advertising" className="d-none" />
             <label className="underlined-btn" htmlFor="advertising">Advertising</label>
           </div>
-
-          <motion.div animate={{ y: 100 }} layout className="cases-list">
+          
+          <motion.div layout className="cases-list">
             {
               filtered.map((el, key) => {
                 return <Work work={el} key={key} />
