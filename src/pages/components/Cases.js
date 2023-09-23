@@ -1,7 +1,8 @@
 export const works = [
-  { 
+  {
+    id: 1,
     "slug": "Khayaziz-Group",
-    "type": ["Branding","Web"],
+    "type": ["Branding", "Web"],
     "headerTitle": "Khayaziz Group",
     "breadcrumb": "Khayaziz Group",
     "cover": "/assets/img/works/work-1/case-cover.png",
@@ -15,16 +16,17 @@ export const works = [
       "Website": "khayaziz-group.com"
     },
     pictures: ["/assets/img/works/work-1/case-pic-1-fullwidth.webp",
-    "/assets/img/works/work-1/case-thumb-1.webp",
-    "/assets/img/works/work-1/case-thumb-2.webp", 
-    "/assets/img/works/work-1/case-pic-2-fullwidth.png",
-    "/assets/img/works/work-1/case-thumb-3.webp",
-    "/assets/img/works/work-1/case-thumb-4.webp"
+      "/assets/img/works/work-1/case-thumb-1.webp",
+      "/assets/img/works/work-1/case-thumb-2.webp",
+      "/assets/img/works/work-1/case-pic-2-fullwidth.png",
+      "/assets/img/works/work-1/case-thumb-3.webp",
+      "/assets/img/works/work-1/case-thumb-4.webp"
     ],
     "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     "otherDetails": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   },
-  { 
+  {
+    id: 2,
     "slug": "title",
     "type": ["Branding"],
     "headerTitle": "String",
@@ -43,7 +45,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 3,
     "slug": "title",
     "type": ["Advertising"],
     "headerTitle": "String",
@@ -62,7 +65,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 4,
     "slug": "title",
     "type": ["Branding"],
     "headerTitle": "String",
@@ -81,7 +85,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 5,
     "slug": "title",
     "type": ["Branding"],
     "headerTitle": "String",
@@ -100,7 +105,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 6,
     "slug": "title",
     "type": ["Advertising"],
     "headerTitle": "String",
@@ -119,7 +125,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 7,
     "slug": "title",
     "type": ["Web"],
     "headerTitle": "String",
@@ -138,7 +145,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 8,
     "slug": "title",
     "type": ["Web"],
     "headerTitle": "String",
@@ -157,7 +165,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 9,
     "slug": "title",
     "type": ["Web"],
     "headerTitle": "String",
@@ -176,7 +185,8 @@ export const works = [
     "testimonial": "String",
     "otherDetails": "String"
   },
-  { 
+  {
+    id: 10,
     "slug": "title",
     "type": ["Advertising"],
     "headerTitle": "String",
