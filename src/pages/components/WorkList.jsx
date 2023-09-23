@@ -31,8 +31,8 @@ export default function WorkList() {
 
   return (
     <section className="cases-page">
-      <div className="container-xxl">
-        <div className="row justify-content-md-center">
+      <div className="container">
+        <div className="row">
 
           <div className="works-filters d-flex justify-content-center mb-5">
             <input type="radio" onClick={() => setType('All')} name="category" id="all" value="all" className="d-none" />

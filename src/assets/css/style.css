@@ -7886,7 +7886,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .cases-page {
     position: relative;
     display: block;
-    padding: 120px 0 90px;
+    padding: 120px 0;
     background-color: var(--motion-white);
 }
 

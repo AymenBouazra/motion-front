@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const Work = ({ work }) => {
     return (
-        <motion.div layout className="wow fadeInUp filter-item branding" data-wow-delay="100ms">
+        <motion.div layout>
             <div className="case-one__single">
                 <div className="case-one__img">
                     <img src="assets/img/works/project-block-1.png" alt="" />
