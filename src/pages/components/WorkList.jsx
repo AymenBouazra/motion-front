@@ -6,8 +6,8 @@ import Work from "./Work";
 export const WorksContext = createContext();
 
 export default function WorkList() {
-  const [projects, setProjects] = useState([])
-  const [filtered, setFiltered] = useState([])
+  const [projects, setProjects] = useState()
+  const [filtered, setFiltered] = useState()
 
   const handleClickFilter = (genre) => {
     const work = projects.filter((x) => x.type.includes(genre))
@@ -19,8 +19,8 @@ export default function WorkList() {
     }
   }
   useEffect(() => {
-    setProjects(works)
-    setFiltered(works)
+      setProjects(works)
+      setFiltered(works)
   }, [])
 
   const value = {

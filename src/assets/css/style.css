@@ -2664,6 +2664,10 @@ input[type="search"]::-webkit-search-results-decoration {
     transition: all 500ms ease;
 }
 
+.case-one__single .case-one__tagline {
+    color: var(--motion-gray);
+}
+
 .case-one__single:hover .case-one__tagline {
     color: var(--motion-white);
 }
@@ -7989,6 +7993,11 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 500px;
 }
 
+.case-one__img-skeleton {
+    width: 100%;
+    height: 100%;
+}
+
 .cases-list .case-one__img img {
     width: 100%;
     border-radius: var(--motion-bdr-radius);
@@ -9377,4 +9386,94 @@ input[type="search"]::-webkit-search-results-decoration {
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
+}
+
+.container-placeholder {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 500px;
+	margin-bottom: 60px;
+}
+
+.content-placeholder {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+	height: 100%;
+	-webkit-animation: placeHolderSwept 1s infinite linear forwards;
+	-moz-animation: placeHolderSwept 1s infinite linear forwards;
+	-o-animation: placeHolderSwept 1s infinite linear forwards;
+	animation: placeHolderSwept 1s infinite linear forwards;
+	background: #ebebec;
+	background-image: linear-gradient(to right, #ebebec 0%, #e0e0e2 20%, #ebebec 40%, #ebebec 100%);
+	background-repeat: no-repeat;
+}
+
+@-webkit-keyframes placeHolderSwept {
+	0% {
+		background-position: -400px 0
+	}
+
+	100% {
+		background-position: 400px 0
+	}
+}
+
+@-moz-keyframes placeHolderSwept {
+	0% {
+		background-position: -400px 0
+	}
+
+	100% {
+		background-position: 400px 0
+	}
+}
+
+@-o-keyframes placeHolderSwept {
+	0% {
+		background-position: -400px 0
+	}
+
+	100% {
+		background-position: 400px 0
+	}
+}
+
+@keyframes placeHolderSwept {
+	0% {
+		background-position: -400px 0
+	}
+
+	100% {
+		background-position: 400px 0
+	}
+}
+
+.line {
+	background: #ebebec;
+	position: relative;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.line1 {
+    top: 0px;
+    width: 250px;
+    height: 34px;
+}
+
+.line2 {
+    width: 250px;
+    height: 34px;
+    margin-top: 4px;
+}
+
+.line3 {
+    width: 45px;
+    height: 32px;
 }

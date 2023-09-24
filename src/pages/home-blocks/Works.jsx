@@ -20,9 +20,7 @@ const Works = () => {
                 <div className="case-one__content">
                   <p className="case-one__tagline">leadership</p>
                   <h3 className="case-one__title">
-                    <Link to="/">
                       Businesses <br /> Growth
-                    </Link>
                   </h3>
                   <div className="case-one__arrow">
                     <Link to="/">
