@@ -1,6 +1,7 @@
 import React, { useState, useEffect, createContext } from "react";
 import { AnimatePresence } from "framer-motion"
 import { works } from "./Cases"
+import axios from "axios"
 import Work from "./Work";
 
 export const WorksContext = createContext();
@@ -19,8 +20,17 @@ export default function WorkList() {
     }
   }
   useEffect(() => {
-      setProjects(works)
-      setFiltered(works)
+    const fetchWorks = async () => {
+      try {
+        const response = await axios.get(process.env.REACT_APP_BASE_URL + '/app/v1/works-for-clientside')
+        setProjects(response.data)
+        setFiltered(response.data)
+      }
+      catch (error) {
+        console.log('Error:', error)
+      }
+    }
+    fetchWorks()
   }, [])
 
   const value = {

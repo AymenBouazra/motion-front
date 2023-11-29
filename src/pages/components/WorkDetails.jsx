@@ -4,15 +4,15 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import WorkDetailsHeader from "../title-headers/WorkDetailsHeader";
 import ContactBlock from "../home-blocks/ContactBlock";
-import { works } from "./Cases";
+import axios from 'axios'
 
 const WorkDetails = () => {
   const [work, setWork] = useState({})
   const params = useParams()
   useEffect(() => {
-    const fetchWork = () => {
-      const response = works.find((x) => x.slug === params.slug)
-      setWork(response)
+    const fetchWork = async () => {
+      const response = await axios.get(process.env.REACT_APP_BASE_URL + '/app/v1/works-for-clientside/' + params.slug)
+      setWork(response.data)
     }
     fetchWork()
   }, [params.slug])
@@ -22,7 +22,7 @@ const WorkDetails = () => {
   }, [])
   return (
     <>
-      <WorkDetailsHeader cover={work.cover} breadcrumb={work.breadcrumb} headertitle={work.headerTitle} />
+      <WorkDetailsHeader cover={work?.cover} breadcrumb={work?.breadcrumb} headertitle={work?.headerTitle} />
 
       <section className="case-details">
         <div className="container">
@@ -31,12 +31,12 @@ const WorkDetails = () => {
             <div className="col-xl-12 case-details__content">
               <span className="section-title__tagline">get to know us</span>
               <h4 className="case-details__content-title">
-                {work.title}
+                {work?.title}
               </h4>
               <div className="row justify-content-md-center">
                 <div className="col-lg-12 mb-5 wow animate__fadeIn">
                   <p className="case-details__content-text-1">
-                    {work.description}
+                    {work?.description}
                   </p>
                 </div>
 
@@ -51,7 +51,7 @@ const WorkDetails = () => {
                           Client
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work.clientInfos?.Client}</p>
+                      <p className="case-details__details-title">{work?.clientInfos?.Client}</p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ const WorkDetails = () => {
                           Industry
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work.clientInfos?.Industry}</p>
+                      <p className="case-details__details-title">{work?.clientInfos?.Industry}</p>
                     </div>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ const WorkDetails = () => {
                           Services
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work.clientInfos?.Services}</p>
+                      <p className="case-details__details-title">{work?.clientInfos?.Services}</p>
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const WorkDetails = () => {
                           Date
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work.clientInfos?.Date}</p>
+                      <p className="case-details__details-title">{work?.clientInfos?.Date}</p>
                     </div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const WorkDetails = () => {
                           Website
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work.clientInfos?.Website}</p>
+                      <p className="case-details__details-title">{work?.clientInfos?.Website}</p>
                     </div>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const WorkDetails = () => {
       <section className="case-picture-block">
         <div className="container-fluid p-0">
           <div className="row">
-            <img src={work.pictures && work?.pictures[0]} alt="" />
+            <img src={work?.pictures && work?.pictures[0]} alt="" />
           </div>
         </div>
       </section>
@@ -138,10 +138,10 @@ const WorkDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <img src={work.pictures && work?.pictures[1]} alt="" />
+              <img src={work?.pictures && work?.pictures[1]} alt="" />
             </div>
             <div className="col-lg-6">
-              <img src={work.pictures && work?.pictures[2]} alt="" />
+              <img src={work?.pictures && work?.pictures[2]} alt="" />
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ const WorkDetails = () => {
       <section className="case-picture-block">
         <div className="container-fluid p-0">
           <div className="row">
-            <img src={work.pictures && work?.pictures[3]} alt="" />
+            <img src={work?.pictures && work?.pictures[3]} alt="" />
           </div>
         </div>
       </section>
@@ -189,10 +189,10 @@ const WorkDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <img src={work.pictures && work?.pictures[4]} alt="" />
+              <img src={work?.pictures && work?.pictures[4]} alt="" />
             </div>
             <div className="col-lg-6">
-              <img src={work.pictures && work?.pictures[5]} alt="" />
+              <img src={work?.pictures && work?.pictures[5]} alt="" />
             </div>
           </div>
         </div>

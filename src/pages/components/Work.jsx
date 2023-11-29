@@ -32,7 +32,7 @@ const Work = () => {
     filtered.map((el) => (
       <motion.div
         className="case-card"
-        key={el.id}
+        key={el._id}
         layout
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
