@@ -51,7 +51,7 @@ const WorkDetails = () => {
                           Client
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work?.clientInfos?.Client}</p>
+                      <p className="case-details__details-title">{work?.Client}</p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ const WorkDetails = () => {
                           Industry
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work?.clientInfos?.Industry}</p>
+                      <p className="case-details__details-title">{work?.Industry}</p>
                     </div>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ const WorkDetails = () => {
                           Services
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work?.clientInfos?.Services}</p>
+                      <p className="case-details__details-title">{work?.Services}</p>
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const WorkDetails = () => {
                           Date
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work?.clientInfos?.Date}</p>
+                      <p className="case-details__details-title">{work?.Date}</p>
                     </div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const WorkDetails = () => {
                           Website
                         </div>
                       </div>
-                      <p className="case-details__details-title">{work?.clientInfos?.Website}</p>
+                      <p className="case-details__details-title">{work?.Website}</p>
                     </div>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const WorkDetails = () => {
       <section className="case-picture-block">
         <div className="container-fluid p-0">
           <div className="row">
-            <img src={work?.pictures && work?.pictures[0]} alt="" />
+            <img src={work?.firstBanner && work?.firstBanner} alt="" />
           </div>
         </div>
       </section>
@@ -137,12 +137,13 @@ const WorkDetails = () => {
       <section className="case-picture-block">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <img src={work?.pictures && work?.pictures[1]} alt="" />
-            </div>
-            <div className="col-lg-6">
-              <img src={work?.pictures && work?.pictures[2]} alt="" />
-            </div>
+            {
+              work?.firstPictures && work?.firstPictures.map((pic, index) => {
+                return <div key={index} className="col-lg-6">
+                  <img src={pic && pic} alt="" />
+                </div>
+              })
+            }
           </div>
         </div>
       </section>
@@ -180,7 +181,7 @@ const WorkDetails = () => {
       <section className="case-picture-block">
         <div className="container-fluid p-0">
           <div className="row">
-            <img src={work?.pictures && work?.pictures[3]} alt="" />
+            <img src={work?.secondBanner && work?.secondBanner} alt="" />
           </div>
         </div>
       </section>
@@ -188,12 +189,13 @@ const WorkDetails = () => {
       <section className="case-picture-block mb-0 pb-0">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <img src={work?.pictures && work?.pictures[4]} alt="" />
-            </div>
-            <div className="col-lg-6">
-              <img src={work?.pictures && work?.pictures[5]} alt="" />
-            </div>
+            {
+              work?.secondPictures && work?.secondPictures.map((pic, index) => {
+                return <div key={index} className="col-lg-6">
+                  <img src={pic && pic} alt="" />
+                </div>
+              })
+            }
           </div>
         </div>
       </section>
