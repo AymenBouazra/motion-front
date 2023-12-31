@@ -20,7 +20,7 @@ const Works = () => {
                 <div className="case-one__content">
                   <p className="case-one__tagline">leadership</p>
                   <h3 className="case-one__title">
-                      Businesses <br /> Growth
+                    Businesses <br /> Growth
                   </h3>
                   <div className="case-one__arrow">
                     <Link to="/">
@@ -142,11 +142,11 @@ const Works = () => {
                     </Link>
                   </div>
                 </div>
-              </div> 
-              </OwlCarousel>
-            </div>
+              </div>
+            </OwlCarousel>
           </div>
         </div>
+      </div>
     </section>
   );
 };
