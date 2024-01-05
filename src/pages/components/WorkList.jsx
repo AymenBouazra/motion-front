@@ -1,6 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
 import { AnimatePresence } from "framer-motion"
-import { works } from "./Cases"
 import axios from "axios"
 import Work from "./Work";
 
@@ -13,7 +12,7 @@ export default function WorkList() {
   const handleClickFilter = (genre) => {
     const work = projects.filter((x) => x.type.includes(genre))
     if (genre === 'All') {
-      setFiltered(works);
+      setFiltered(projects);
     }
     else {
       setFiltered(work);

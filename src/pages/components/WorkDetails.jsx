@@ -1,20 +1,27 @@
 import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import WorkDetailsHeader from "../title-headers/WorkDetailsHeader";
 import ContactBlock from "../home-blocks/ContactBlock";
 import axios from 'axios'
 
 const WorkDetails = () => {
   const [work, setWork] = useState({})
+  const navigate = useNavigate()
   const params = useParams()
   useEffect(() => {
     const fetchWork = async () => {
       const response = await axios.get(process.env.REACT_APP_BASE_URL + '/app/v1/works-for-clientside/' + params.slug)
+      if (response.data == null) {
+        window.location.href = '/page-not-found'
+        return
+      }
       setWork(response.data)
     }
+    const controller = new AbortController();
     fetchWork()
+    return controller.abort()
   }, [params.slug])
 
   useEffect(() => {
